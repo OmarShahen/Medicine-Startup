@@ -15,7 +15,6 @@ app.register_blueprint(auth_bp, url_prefix='/api/auth')
 
 @app.route('/')
 def hello_world():
-    print(request.form['name'])
     return 'Done', 200
 
 
